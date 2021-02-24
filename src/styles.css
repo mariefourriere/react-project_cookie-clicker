@@ -1,0 +1,25 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+  }
+
+  img{
+    width: 350px;
+  }
+
+  main{
+    display: flex;
+    
+  }
+
+  #sidebar{
+    background-color: cadetblue;
+    width: 30%;
+    padding: 15px;
+  }
+
+  #total{
+    display:flex;
+margin-left: 20px;
+font-size: 35px;
+  }
