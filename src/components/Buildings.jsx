@@ -1,52 +1,82 @@
 import React from 'react';
 
+import Building from './Building'
+
 class Buildings extends React.Component{
     state = {
-        price: 15,
-        numberofBuildings: 0,
-        cookiesPerSec: 0.2,
+        buildings: [
+            {
+                id: 1,
+                price: 15,
+                numberofBuildings: 0,
+                cookiesPerSec: 0.2,
+            },
+            {
+                id: 2,
+                price: 150,
+                numberofBuildings: 0,
+                cookiesPerSec: 4,
+            },
+            {
+                id: 3,
+                price: 500,
+                numberofBuildings: 0,
+                cookiesPerSec: 10,
+            },
+            {
+                id: 4,
+                price: 1000,
+                numberofBuildings: 0,
+                cookiesPerSec: 20,
+            },
+            {
+                id: 5,
+                price: 2000,
+                numberofBuildings: 0,
+                cookiesPerSec: 45,
+            },
+            
+        ],
+       
     }
 
-    handleClick =() => {
-       if(this.props.getCount >= this.state.price){
-        this.props.onUpdateCookies(-this.state.price)
-        
-        this.props.onUpdatePerSec(this.state.cookiesPerSec);
-        
-        let price = this.state.price;
-        price = Math.floor(price *1.1);
-        
-        let numberofBuildings = this.state.numberofBuildings;
-        numberofBuildings++; 
+    handleClick = id => {
+        let buildings = [...this.state.buildings];
+        const index = buildings.findIndex(building => building.id === id);
 
-        let cookiesPerSec
         
-        this.setState({price, numberofBuildings })
-       }
+            if(this.props.getCount >= buildings[index].price){
+            
+                this.props.onUpdateCookies(-buildings[index].price)
+                
+                this.props.onUpdatePerSec(buildings[index].cookiesPerSec);
+                
+                
+                buildings[index].price = Math.floor(buildings[index].price *1.1);
+                
+                              
+                buildings[index].numberofBuildings++; 
+
+                              
+                this.setState({buildings})
+            
+        }
         
     }
     render(){
-        return(
-            <div id="building">
-            <div>
-                <h3>Building A</h3>
-                <p>Price = {this.state.price}</p>
-                <p>you have {this.state.numberofBuildings} buildings</p>
-                <button onClick={this.handleClick}>BUY</button>
-
-            </div>
-            <div>
-                {/* <h3>Building B</h3>
-                <p>Price = {this.state.price}</p>
-                <button onClick={this.handleClick}>BUY</button> */}
-
-            </div>
-                
-                
-
-                
-            </div>
+        return (
+            <>
+                {this.state.buildings.map(building => (
+                    <Building
+                    key={building.id}
+                    details={building}
+                    onUpdateBuilding = {this.handleClick}
+                    />
+                   
+                ))}
+           </>
         )
+   
     }
 }
 
