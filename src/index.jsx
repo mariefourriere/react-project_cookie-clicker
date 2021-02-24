@@ -19,11 +19,10 @@ class App extends React.Component {
   }
 
 
-
- updateCookiesPerSec(x){
+ updateCookiesPerSec = (x) => {
     let cookiesPerSec = this.state.cookiesPerSec;
     cookiesPerSec += x;
-    this.setState({cookiesPerSec});
+    this.setState({ cookiesPerSec });
   }
 
   interval = setInterval(() => {

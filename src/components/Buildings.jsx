@@ -11,15 +11,17 @@ class Buildings extends React.Component{
        if(this.props.getCount >= this.state.price){
         this.props.onUpdateCookies(-this.state.price)
         
-        this.props.onUpdatePerSec(this.cookiesPerSec);
+        this.props.onUpdatePerSec(this.state.cookiesPerSec);
         
         let price = this.state.price;
         price = Math.floor(price *1.1);
         
         let numberofBuildings = this.state.numberofBuildings;
         numberofBuildings++; 
+
+        let cookiesPerSec
         
-        this.setState({price, numberofBuildings, cookiesPerSec})
+        this.setState({price, numberofBuildings })
        }
         
     }
