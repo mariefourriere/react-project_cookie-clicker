@@ -1,6 +1,7 @@
 body {
-    font: 14px "Century Gothic", Futura, sans-serif;
+    font: 14px "Arial", Helvetica, sans-serif;
     margin: 20px;
+    font-weight: 100;
   }
 
   img{
@@ -10,6 +11,43 @@ body {
   main{
     display: flex;
     
+  }
+  h1{
+    font-size: 50px;
+    font-weight: 100;
+    display: flex;
+    color:cadetblue;
+    
+  }
+
+  img{
+    padding: 20px;
+  }
+
+  h3{
+    font-size: 24px;
+    margin: 6px;
+  }
+  p{
+    font-size: 18px;
+    margin: 6px;
+  }
+
+  button{
+    padding: 8px;
+    width: 100px;
+    background-color: lightblue;
+    border:none;
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
+    margin: 6px;
+  }
+
+  button:hover{
+    background-color: cadetblue;
+    color: white;
+    border: lightblue solid 2px;
   }
 
   #sidebar{
@@ -22,4 +60,19 @@ body {
     display:flex;
 margin-left: 20px;
 font-size: 35px;
+  }
+
+  #cookieNumber{
+    font-size: 30px;
+    padding: 20px;
+    
+  }
+
+  #cookieNumberPerSec{
+    font-size: 20px;
+padding: 20px;
+  }
+
+  .buildings{
+    border: black solid 1 px;
   }
