@@ -1,0 +1,92 @@
+body {
+    font: 14px "Arial", Helvetica, sans-serif;
+    margin: 20px;
+    font-weight: 100;
+    background-color: rgb(213, 252, 253);
+  }
+
+  img{
+    width: 350px;
+  }
+
+  main{
+    display: flex;
+    
+  }
+  h1{
+    font-size: 50px;
+    font-weight: 100;
+    text-align: center;
+    color:cadetblue;
+    
+  }
+
+  img{
+    padding: 20px;
+  }
+
+  h3{
+    font-size: 24px;
+    margin: 6px;
+  }
+  p{
+    font-size: 18px;
+    margin: 6px;
+  }
+
+  button{
+    padding: 8px;
+    width: 100px;
+    background-color: lightblue;
+    border:transparent solid 1px;
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
+    margin: 6px;
+  }
+
+  button:hover{
+    background-color: cadetblue;
+    color: white;
+    border: lightblue solid 1px;
+  }
+
+  #sidebar{
+    background-color: cadetblue;
+    width: 30%;
+    padding: 15px;
+  }
+
+  #total{
+    display:flex;
+margin-left: 20px;
+font-size: 35px;
+  }
+
+  #cookieNumber{
+    font-size: 30px;
+    padding: 20px;
+    
+  }
+
+  #cookieNumberPerSec{
+    font-size: 20px;
+padding: 20px;
+  }
+
+  .buildings{
+    border: black solid 1 px;
+  }
+  #start{
+    font-size: 20px;
+    text-transform:uppercase;
+    margin: 12px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  #rightbar{
+    border: cadetblue solid 1px;
+  }
+
+/*# sourceMappingURL=/styles.dd855970.css.map */
