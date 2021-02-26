@@ -8,8 +8,9 @@ class City extends React.Component{
                return(
                     <div className="city">
                         <p id="start">Congrats, you are building your city</p>
-                        
-                </div>
+                                      
+                  
+                    </div>
                 )
             }
 }
