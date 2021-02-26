@@ -4,6 +4,9 @@ import ReactDOM from 'react-dom';
 import Cookie from './components/Cookie';
 import Sidebar from './components/Sidebar';
 import Buildings from './components/Buildings';
+import Rightbar from './components/Rightbar';
+import City from './components/City';
+
 
 class App extends React.Component {
   
@@ -32,7 +35,8 @@ class App extends React.Component {
   render() {
     return(
         <>
-            <h1>Welcome to the Cookie Clicker</h1>
+            <h1>Welcome to the City Clicker</h1>
+            <p id="start">start building your city Now! </p>
             <main>
             <Sidebar> 
               <Buildings 
@@ -45,6 +49,11 @@ class App extends React.Component {
             <Cookie onUpdateCookies={this.incrementCookie} 
             getCount= {this.state.cookies}
             getCookiesPerSec ={this.state.cookiesPerSec}/>
+            <Rightbar>
+                <City
+                
+                />
+            </Rightbar>
             </main>
             
         </>

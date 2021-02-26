@@ -2,6 +2,7 @@ body {
     font: 14px "Arial", Helvetica, sans-serif;
     margin: 20px;
     font-weight: 100;
+    background-color: rgb(213, 252, 253);
   }
 
   img{
@@ -15,7 +16,7 @@ body {
   h1{
     font-size: 50px;
     font-weight: 100;
-    display: flex;
+    text-align: center;
     color:cadetblue;
     
   }
@@ -37,7 +38,7 @@ body {
     padding: 8px;
     width: 100px;
     background-color: lightblue;
-    border:none;
+    border:transparent solid 1px;
     color: white;
     font-weight: 200;
     font-size: 20px;
@@ -47,7 +48,7 @@ body {
   button:hover{
     background-color: cadetblue;
     color: white;
-    border: lightblue solid 2px;
+    border: lightblue solid 1px;
   }
 
   #sidebar{
@@ -75,4 +76,15 @@ padding: 20px;
 
   .buildings{
     border: black solid 1 px;
+  }
+  #start{
+    font-size: 20px;
+    text-transform:uppercase;
+    margin: 12px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  #rightbar{
+    border: cadetblue solid 1px;
   }
